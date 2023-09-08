@@ -25,7 +25,7 @@ def get_info():
     if abs(time_difference) > max_time_difference:
         return jsonify({'error': 'Time difference surpassed'})
 
-    info = {
+    return jsonify({
         'slack_name': slack_name,
         'current_day': current_day,
         'utc_time': current_utc_time,
@@ -33,9 +33,7 @@ def get_info():
         'github_file_url': github_file_url,
         'github_repo_url': github_repo_url,
         'status_code': 200
-    }
-
-    return jsonify(info)
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)
