@@ -11,7 +11,7 @@ def get_info():
     # setting parameters required
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
-    github_file_url = 'https://github.com/kevinkoech357/stage_one_backend/blob/main/api/main.py'
+    github_file_url = 'https://github.com/kevinkoech357/stage_one_backend/blob/main/main.py'
     github_repo_url = 'https://github.com/kevinkoech357/stage_one_backend'
 
     # setting day and time
